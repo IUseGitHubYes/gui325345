@@ -1,0 +1,631 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("ScrollingFrame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton1 = Instance.new("TextButton")
+local TextButton2 = Instance.new("TextButton")
+local TextButton3 = Instance.new("TextButton")
+local TextButton4 = Instance.new("TextButton")
+local TextButton5 = Instance.new("TextButton")
+local TextButton6 = Instance.new("TextButton")
+local TextButton7 = Instance.new("TextButton")
+local TextButton8 = Instance.new("TextButton")
+local TextButton9 = Instance.new("TextButton")
+local TextButton1a = Instance.new("TextButton")
+local TextButton2a = Instance.new("TextButton")
+local TextButton3a = Instance.new("TextButton")
+local TextButton4a = Instance.new("TextButton")
+local TextButton5a = Instance.new("TextButton")
+local TextButton6a = Instance.new("TextButton")
+local TextButton7a = Instance.new("TextButton")
+local TextButton8a = Instance.new("TextButton")
+local TextButton9a = Instance.new("TextButton")
+local TextButton1b = Instance.new("TextButton")
+local TextButton2b = Instance.new("TextButton")
+
+------------------------------------------------------------------------------------
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 2
+Frame.Position = UDim2.new(0.887, 0, 0.685, 50)
+Frame.Size = UDim2.new(0, 172, 0, 186)
+Frame.Visible = true
+Frame.Active = true
+Frame.Draggable = false
+
+------------------------------------------------------------------------------------
+
+TextLabel.Parent = Frame
+TextLabel.Position = UDim2.new{0, 0},{0, 0}
+TextLabel.BackgroundColor3 = Color3.fromRGB(145, 1, 4)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 2
+TextLabel.Size = UDim2.new(0, 160, 0, 23)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Ninja Simulator"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 15.000
+
+------------------------------------------------------------------------------------
+
+TextButton.Name = "TextButton"
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton.BorderSizePixel = 2
+TextButton.Position = UDim2.new(-0, 0, 0.03, 0)
+TextButton.Size = UDim2.new(0, 160, 0, 20)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "PVP Toggle"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 18.000
+TextButton.MouseButton1Down:connect(function()
+game.ReplicatedStorage.Remotes.Pvp:InvokeServer(true)
+end)
+
+TextButton1.Name = "TextButton1"
+TextButton1.Parent = Frame
+TextButton1.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton1.BorderSizePixel = 2
+TextButton1.Position = UDim2.new(-0, 0, 0.06, 0)
+TextButton1.Size = UDim2.new(0, 160, 0, 20)
+TextButton1.Font = Enum.Font.SourceSans
+TextButton1.Text = "Annoy All (PVP)"
+TextButton1.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton1.TextSize = 18.000
+TextButton1.MouseButton1Down:connect(function()
+while true do
+    for i,v in pairs(game.Players:GetChildren()) do
+plrs = v.Name
+lp = game.Players.LocalPlayer
+if v.Name ~= lp.Name then
+game.ReplicatedStorage.Remotes.Knockback:InvokeServer(Workspace:FindFirstChild(plrs).Humanoid, 40, 0.1)
+end
+end
+end
+-------
+wait(5)
+-------
+while true do
+    for i,v in pairs(game.Players:GetChildren()) do
+plrs = v.Name
+lp = game.Players.LocalPlayer
+if v.Name ~= lp.Name then
+game.ReplicatedStorage.Remotes.Knockback:InvokeServer(Workspace:FindFirstChild(plrs).Humanoid, 40, 0.1)
+end
+end
+end
+end)
+
+TextButton2.Name = "TextButton2"
+TextButton2.Parent = Frame
+TextButton2.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton2.BorderSizePixel = 2
+TextButton2.Position = UDim2.new(-0, 0, 0.09, 0)
+TextButton2.Size = UDim2.new(0, 160, 0, 20)
+TextButton2.Font = Enum.Font.SourceSans
+TextButton2.Text = "Kill All|PVP|Spam for higher level players"
+TextButton2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton2.TextSize = 10.000
+TextButton2.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ih8myselff/rdggnghfhfhghg/main/script3543645324"))()
+end)
+
+TextButton3.Name = "TextButton3"
+TextButton3.Parent = Frame
+TextButton3.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton3.BorderSizePixel = 2
+TextButton3.Position = UDim2.new(-0, 0, 0.12, 0)
+TextButton3.Size = UDim2.new(0, 160, 0, 20)
+TextButton3.Font = Enum.Font.SourceSans
+TextButton3.Text = "Afk Chi Farm"
+TextButton3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton3.TextSize = 18.000
+TextButton3.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ih8myselff/levelscript/main/NinjaSimulatorLevels"))()
+end)
+
+TextButton4.Name = "TextButton4"
+TextButton4.Parent = Frame
+TextButton4.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton4.BorderSizePixel = 2
+TextButton4.Position = UDim2.new(-0, 0, 0.15, 0)
+TextButton4.Size = UDim2.new(0, 160, 0, 20)
+TextButton4.Font = Enum.Font.SourceSans
+TextButton4.Text = "Afk Chi Farm (Slower % less crashing)"
+TextButton4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton4.TextSize = 12.000
+TextButton4.MouseButton1Down:connect(function()
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+wait(1)
+vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+local A_1   = game:GetService("Workspace")["先生"].Humanoid
+local A_2   = "punch"
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+
+game:GetService('RunService').Stepped:connect(function()
+Event:InvokeServer(A_1, A_2)
+end)
+local A_1   = game:GetService("Workspace")["先生"].Humanoid
+local A_2   = "punch"
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+
+game:GetService('RunService').Stepped:connect(function()
+Event:InvokeServer(A_1, A_2)
+end)
+local A_1   = game:GetService("Workspace")["先生"].Humanoid
+local A_2   = "punch"
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+
+game:GetService('RunService').Stepped:connect(function()
+Event:InvokeServer(A_1, A_2)
+end)
+local A_1   = game:GetService("Workspace")["先生"].Humanoid
+local A_2   = "punch"
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+
+game:GetService('RunService').Stepped:connect(function()
+Event:InvokeServer(A_1, A_2)
+end)
+local A_1   = game:GetService("Workspace")["先生"].Humanoid
+local A_2   = "punch"
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+
+game:GetService('RunService').Stepped:connect(function()
+Event:InvokeServer(A_1, A_2)
+end)
+end)
+
+TextButton5.Name = "TextButton5"
+TextButton5.Parent = Frame
+TextButton5.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton5.BorderSizePixel = 2
+TextButton5.Position = UDim2.new(-0, 0, 0.18, 0)
+TextButton5.Size = UDim2.new(0, 160, 0, 20)
+TextButton5.Font = Enum.Font.SourceSans
+TextButton5.Text = "Chi Farm (Z Toggle)"
+TextButton5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton5.TextSize = 18.000
+TextButton5.MouseButton1Down:connect(function()
+local A_1   = game:GetService("Workspace")["先生"].Humanoid
+local A_2   = "punch"
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+
+local toggled = false
+local keys = "z"
+local plr = game:GetService("Players").LocalPlayer
+local mouse = plr:GetMouse()
+
+mouse.KeyDown:connect(function(key)
+    if key:lower() == keys then
+        toggled = not toggled
+        print(tostring(toggled))
+    end
+end)
+
+game:GetService('RunService').Stepped:connect(function()
+if toggled then
+Event:InvokeServer(A_1, A_2)
+end
+end)
+end)
+
+TextButton6.Name = "TextButton6"
+TextButton6.Parent = Frame
+TextButton6.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton6.BorderSizePixel = 2
+TextButton6.Position = UDim2.new(-0, 0, 0.21, 0)
+TextButton6.Size = UDim2.new(0, 160, 0, 20)
+TextButton6.Font = Enum.Font.SourceSans
+TextButton6.Text = "Turn flute into vape (Patched)"
+TextButton6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton6.TextSize = 14.000
+TextButton6.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.BackPack.Flute)
+wait(0.8)
+game.Players.LocalPlayer.Character.Head:Destroy()
+end)
+
+TextButton7.Name = "TextButton7"
+TextButton7.Parent = Frame
+TextButton7.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton7.BorderSizePixel = 2
+TextButton7.Position = UDim2.new(-0, 0, 0.24, 0)
+TextButton7.Size = UDim2.new(0, 160, 0, 20)
+TextButton7.Font = Enum.Font.SourceSans
+TextButton7.Text = "Die Without Ragdoll"
+TextButton7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton7.TextSize = 18.000
+TextButton7.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.Head:Destroy()
+end)
+
+TextButton8.Name = "TextButton8"
+TextButton8.Parent = Frame
+TextButton8.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton8.BorderSizePixel = 2
+TextButton8.Position = UDim2.new(-0, 0, 0.27, 0)
+TextButton8.Size = UDim2.new(0, 160, 0, 20)
+TextButton8.Font = Enum.Font.SourceSans
+TextButton8.Text = "Delete PVP Text"
+TextButton8.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton8.TextSize = 18.000
+TextButton8.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.UpperTorso.PvpTag.TextLabel:Destroy()
+end)
+
+TextButton9.Name = "TextButton9"
+TextButton9.Parent = Frame
+TextButton9.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton9.BorderSizePixel = 2
+TextButton9.Position = UDim2.new(-0, 0, 0.30, 0)
+TextButton9.Size = UDim2.new(0, 160, 0, 20)
+TextButton9.Font = Enum.Font.SourceSans
+TextButton9.Text = "Anti Afk"
+TextButton9.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton9.TextSize = 18.000
+TextButton9.MouseButton1Down:connect(function()
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+wait(1)
+vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+end)
+
+TextButton1a.Name = "TextButton1a"
+TextButton1a.Parent = Frame
+TextButton1a.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton1a.BorderSizePixel = 2
+TextButton1a.Position = UDim2.new(-0, 0, 0.33, 0)
+TextButton1a.Size = UDim2.new(0, 160, 0, 20)
+TextButton1a.Font = Enum.Font.SourceSans
+TextButton1a.Text = "Ctrl + Click TP"
+TextButton1a.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton1a.TextSize = 18.000
+TextButton1a.MouseButton1Down:connect(function()
+local speed = 9999999
+local bodyvelocityenabled = true
+
+local Imput = game:GetService("UserInputService")
+local Plr = game.Players.LocalPlayer
+local Mouse = Plr:GetMouse()
+
+function To(position)
+local Chr = Plr.Character
+if Chr ~= nil then
+local ts = game:GetService("TweenService")
+local char = game.Players.LocalPlayer.Character
+local hm = char.HumanoidRootPart
+local dist = (hm.Position - Mouse.Hit.p).magnitude
+local tweenspeed = dist/tonumber(speed)
+local ti = TweenInfo.new(tonumber(tweenspeed), Enum.EasingStyle.Linear)
+local tp = {CFrame = CFrame.new(position)}
+ts:Create(hm, ti, tp):Play()
+if bodyvelocityenabled == true then
+local bv = Instance.new("BodyVelocity")
+bv.Parent = hm
+bv.MaxForce = Vector3.new(100000,100000,100000)
+bv.Velocity = Vector3.new(0,0,0)
+wait(tonumber(tweenspeed))
+bv:Destroy()
+end
+end
+end
+
+Imput.InputBegan:Connect(function(input)
+   if input.UserInputType == Enum.UserInputType.MouseButton1 and Imput:IsKeyDown(Enum.KeyCode.LeftControl) then
+       To(Mouse.Hit.p)
+   end
+end)
+end)
+
+TextButton2a.Name = "TextButton2a"
+TextButton2a.Parent = Frame
+TextButton2a.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton2a.BorderSizePixel = 2
+TextButton2a.Position = UDim2.new(-0, 0, 0.36, 0)
+TextButton2a.Size = UDim2.new(0, 160, 0, 20)
+TextButton2a.Font = Enum.Font.SourceSans
+TextButton2a.Text = "Ctrl + Click Delete (Client Sided)"
+TextButton2a.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton2a.TextSize = 14.000
+TextButton2a.MouseButton1Down:connect(function()
+local Plr = game:GetService("Players").LocalPlayer
+local Mouse = Plr:GetMouse()
+
+Mouse.Button1Down:connect(function()
+if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftControl) then return end
+if not Mouse.Target then return end
+Mouse.Target:Destroy()
+end)
+end)
+
+TextButton3a.Name = "TextButton3a"
+TextButton3a.Parent = Frame
+TextButton3a.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton3a.BorderSizePixel = 2
+TextButton3a.Position = UDim2.new(-0, 0, 0.39, 0)
+TextButton3a.Size = UDim2.new(0, 160, 0, 20)
+TextButton3a.Font = Enum.Font.SourceSans
+TextButton3a.Text = "GodMode"
+TextButton3a.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton3a.TextSize = 18.000
+TextButton3a.MouseButton1Down:connect(function()
+   while true do
+fireclickdetector(game.Workspace["Default White"]["Model"]["Equip"].ClickDetector)
+wait(0)
+fireclickdetector(game.Workspace["Black Ninja"]["Model"]["Equip"].ClickDetector)
+wait(0)
+end
+end)
+
+TextButton4a.Name = "TextButton4a"
+TextButton4a.Parent = Frame
+TextButton4a.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton4a.BorderSizePixel = 2
+TextButton4a.Position = UDim2.new(-0, 0, 0.42, 0)
+TextButton4a.Size = UDim2.new(0, 160, 0, 20)
+TextButton4a.Font = Enum.Font.SourceSans
+TextButton4a.Text = "GodMode if first one does not work"
+TextButton4a.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton4a.TextSize = 12.000
+TextButton4a.MouseButton1Down:connect(function()
+game.Workspace["Default White"]["Model"]:Destroy()
+     game.Workspace["Black Ninja"]["Model"]:Destroy()
+    wait(1)
+    
+    while true do
+fireclickdetector(game.Workspace["Default White"]["Model"]["Equip"].ClickDetector)
+wait(0)
+fireclickdetector(game.Workspace["Black Ninja"]["Model"]["Equip"].ClickDetector)
+wait(0)
+end
+end)
+
+TextButton5a.Name = "TextButton5a"
+TextButton5a.Parent = Frame
+TextButton5a.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton5a.BorderSizePixel = 2
+TextButton5a.Position = UDim2.new(-0, 0, 0.45, 0)
+TextButton5a.Size = UDim2.new(0, 160, 0, 20)
+TextButton5a.Font = Enum.Font.SourceSans
+TextButton5a.Text = "Night (Client Sided)"
+TextButton5a.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton5a.TextSize = 18.000
+TextButton5a.MouseButton1Down:connect(function()
+local light = game.Lighting
+for i, v in pairs(light:GetChildren()) do
+	v:Destroy()
+end
+
+local ter = workspace.Terrain
+local color = Instance.new("ColorCorrectionEffect")
+local bloom = Instance.new("BloomEffect")
+local sun = Instance.new("SunRaysEffect")
+local blur = Instance.new("BlurEffect")
+
+color.Parent = light
+bloom.Parent = light
+sun.Parent = light
+blur.Parent = light
+
+-- enable or disable stuff
+
+local config = {
+
+	Terrain = true;
+	ColorCorrection = true;
+	Sun = true;
+	Lighting = true;
+	BloomEffect = true;
+	
+}
+
+-- settings {
+
+color.Enabled = false
+color.Contrast = 0.15
+color.Brightness = 0.1
+color.Saturation = 0.25
+color.TintColor = Color3.fromRGB(255, 222, 211)
+
+bloom.Enabled = false
+bloom.Intensity = 0.1
+
+sun.Enabled = false
+sun.Intensity = 0.2
+sun.Spread = 1
+
+bloom.Enabled = false
+bloom.Intensity = 0.05
+bloom.Size = 32
+bloom.Threshold = 1
+
+blur.Enabled = false
+blur.Size = 6
+
+-- settings }
+
+
+if config.ColorCorrection then
+	color.Enabled = true
+end
+
+
+if config.Sun then
+	sun.Enabled = true
+end
+
+
+if config.Terrain then
+	-- settings {
+	ter.WaterColor = Color3.fromRGB(10, 10, 24)
+	ter.WaterWaveSize = 0.15
+	ter.WaterWaveSpeed = 15
+	ter.WaterTransparency = .65
+	ter.WaterReflectance = 0.35
+	-- settings }
+end
+
+
+if config.Lighting then
+	-- settings {
+	light.Ambient = Color3.fromRGB(0, 0, 0)
+	light.Brightness = 4
+	light.ColorShift_Bottom = Color3.fromRGB(0, 0, 0)
+	light.ColorShift_Top = Color3.fromRGB(0, 0, 0)
+	light.ExposureCompensation = 0
+	light.FogColor = Color3.fromRGB(132, 132, 132)
+	light.GlobalShadows = true
+	light.OutdoorAmbient = Color3.fromRGB(112, 117, 128)
+	light.Outlines = false
+	-- settings }
+end
+game:GetService("Lighting").TimeOfDay = 5
+end)
+
+TextButton6a.Name = "TextButton6a"
+TextButton6a.Parent = Frame
+TextButton6a.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton6a.BorderSizePixel = 2
+TextButton6a.Position = UDim2.new(-0, 0, 0.48, 0)
+TextButton6a.Size = UDim2.new(0, 160, 0, 20)
+TextButton6a.Font = Enum.Font.SourceSans
+TextButton6a.Text = "Rejoin"
+TextButton6a.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton6a.TextSize = 18.000
+TextButton6a.MouseButton1Down:connect(function()
+local ts = game:GetService("TeleportService")
+
+local p = game:GetService("Players").LocalPlayer
+
+ 
+
+ts:Teleport(game.PlaceId, p)
+end)
+
+TextButton7a.Name = "TextButton7a"
+TextButton7a.Parent = Frame
+TextButton7a.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton7a.BorderSizePixel = 2
+TextButton7a.Position = UDim2.new(-0, 0, 0.51, 0)
+TextButton7a.Size = UDim2.new(0, 160, 0, 20)
+TextButton7a.Font = Enum.Font.SourceSans
+TextButton7a.Text = "Invisible Bloody Heart"
+TextButton7a.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton7a.TextSize = 18.000
+TextButton7a.MouseButton1Down:connect(function()
+game:GetService("Players").LocalPlayer.Character.Humanoid:UnequipTools()
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Bloody Heart"])
+game.Players.LocalPlayer.Character["Bloody Heart"].Configuration.Swing_Speed.Value = 0.1
+    local original = game.Players.LocalPlayer.Character["Bloody Heart"]
+    local copy = original:Clone()
+    copy.Parent = original.Parent
+    copy.Name = "Invisible Bloody Heart"
+    game:GetService("Players").LocalPlayer.Character.Humanoid:UnequipTools()
+    game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Invisible Bloody Heart"])
+game.Players.LocalPlayer.Character["Invisible Bloody Heart"].ToolTip = "Invisible"
+game.Players.LocalPlayer.Character["Invisible Bloody Heart"].Handle.Transparency = 1
+game.Players.LocalPlayer.Character["Invisible Bloody Heart"].Handle.ParticleEmitter:Destroy()
+wait(0.1)
+game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
+end)
+
+TextButton8a.Name = "TextButton8a"
+TextButton8a.Parent = Frame
+TextButton8a.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton8a.BorderSizePixel = 2
+TextButton8a.Position = UDim2.new(-0, 0, 0.54, 0)
+TextButton8a.Size = UDim2.new(0, 160, 0, 20)
+TextButton8a.Font = Enum.Font.SourceSans
+TextButton8a.Text = "Invisible Spirit Of Life"
+TextButton8a.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton8a.TextSize = 18.000
+TextButton8a.MouseButton1Down:connect(function()
+fireclickdetector(game.Workspace["Spirt Sword Giver"].ClickDetector)
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.Humanoid:UnequipTools()
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Spirt Of Life"])
+game.Players.LocalPlayer.Character["Spirt Of Life"].Configuration.Swing_Speed.Value = 0.3
+    local original = game.Players.LocalPlayer.Character["Spirt Of Life"]
+    local copy = original:Clone()
+    copy.Parent = original.Parent
+    copy.Name = "Invisible Spirit Of Life"
+    game:GetService("Players").LocalPlayer.Character.Humanoid:UnequipTools()
+    game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Invisible Spirit Of Life"])
+game.Players.LocalPlayer.Character["Invisible Spirit Of Life"].ToolTip = "Invisible"
+game.Players.LocalPlayer.Character["Invisible Spirit Of Life"].Handle.Transparency = 1
+game.Players.LocalPlayer.Character["Invisible Spirit Of Life"].Handle.ParticleEmitter:Destroy()
+wait(0.1)
+game.Players.LocalPlayer.Character.Humanoid:UnequipTools()
+end)
+
+TextButton9a.Name = "TextButton9a"
+TextButton9a.Parent = Frame
+TextButton9a.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton9a.BorderSizePixel = 2
+TextButton9a.Position = UDim2.new(-0, 0, 0.57, 0)
+TextButton9a.Size = UDim2.new(0, 160, 0, 20)
+TextButton9a.Font = Enum.Font.SourceSans
+TextButton9a.Text = "Faster Bloody Heart"
+TextButton9a.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton9a.TextSize = 18.000
+TextButton9a.MouseButton1Down:connect(function()
+game:GetService("Players").LocalPlayer.Character.Humanoid:UnequipTools()
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Bloody Heart"])
+game.Players.LocalPlayer.Character["Bloody Heart"]["Handle"]["ParticleEmitter"]:Destroy()
+game.Players.LocalPlayer.Character["Bloody Heart"]["Configuration"]["Swing_Speed"].Value = -600
+game.Players.LocalPlayer.Character["Bloody Heart"].Name = "Fast Bloody Heart"
+wait()
+game:GetService("Players").LocalPlayer.Character.Humanoid:UnequipTools()
+end)
+
+TextButton1b.Name = "TextButton1b"
+TextButton1b.Parent = Frame
+TextButton1b.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton1b.BorderSizePixel = 2
+TextButton1b.Position = UDim2.new(-0, 0, 0.60, 0)
+TextButton1b.Size = UDim2.new(0, 160, 0, 20)
+TextButton1b.Font = Enum.Font.SourceSans
+TextButton1b.Text = "Fast Spirit Of Life"
+TextButton1b.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton1b.TextSize = 18.000
+TextButton1b.MouseButton1Down:connect(function()
+    fireclickdetector(game.Workspace["Spirt Sword Giver"].ClickDetector)
+wait(0.2)
+game:GetService("Players").LocalPlayer.Character.Humanoid:UnequipTools()
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Spirt Of Life"])
+game.Players.LocalPlayer.Character["Spirt Of Life"]["Handle"]["ParticleEmitter"]:Destroy()
+game.Players.LocalPlayer.Character["Spirt Of Life"]["Configuration"]["Swing_Speed"].Value = 0
+game.Players.LocalPlayer.Character["Spirt Of Life"].Name = "Fast Spirit Of Life"
+wait()
+game:GetService("Players").LocalPlayer.Character.Humanoid:UnequipTools()
+end)
+
+TextButton2b.Name = "TextButton2b"
+TextButton2b.Parent = Frame
+TextButton2b.BackgroundColor3 = Color3.fromRGB(73, 101, 162)
+TextButton2b.BorderSizePixel = 2
+TextButton2b.Position = UDim2.new(-0, 0, 0.63, 0)
+TextButton2b.Size = UDim2.new(0, 160, 0, 20)
+TextButton2b.Font = Enum.Font.SourceSans
+TextButton2b.Text = "Super Punch (BRAZIL)"
+TextButton2b.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton2b.TextSize = 18.000
+TextButton2b.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.PlayerGui.Punch.Configuration.Knock_Force:Destroy()
+wait(0.2)
+local myPE = Instance.new("IntValue")
+myPE.Parent = game.Players.LocalPlayer.PlayerGui.Punch.Configuration
+wait(0.2)
+game.Players["LocalPlayer"]["PlayerGui"]["Punch"]["Configuration"]["Value"].Name = "Knock_Force"
+wait(0.2)
+game.Players.LocalPlayer.PlayerGui.Punch.Configuration.Knock_Force.Value = 800
+end)
